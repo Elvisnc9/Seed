@@ -34,64 +34,24 @@ class _TransactionsState extends State<Transactions> {
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 2,
-      child: Container(
-        padding: const EdgeInsets.symmetric(
-            horizontal: 15, vertical: 15),
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: primaryColor),
-        child: Column(
-             // crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            SizedBox(height:45, width: double.infinity,
-            child: ListView.builder(
-              itemCount: items.length,
-               scrollDirection: Axis.horizontal,
-              itemBuilder: (ctx, index){
-             
-              return GestureDetector(
-              
-                
-                onTap: (){
-                  setState(() {
-                    current = index;
-                  });
-                },
-                child: Padding(
-                  padding: const EdgeInsets.all(3.0),
-                  child: AnimatedContainer(
-                  width: 110,
-                  height: 0,
-                  
-                    padding: EdgeInsets.symmetric(horizontal: 5,vertical: 12 ),
-                  
-                    duration: Duration(milliseconds: 500),
-                    decoration: BoxDecoration(
-                      color: current == index? Colors.white : bgColor,
-                      borderRadius: BorderRadius.circular(18)
-                    ),
-                    child: Center(
-                      child: Text(
-                        items[index],
-                        style:  TextStyle(
-                        fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                      color: current == index? Colors.black : Colors.white
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              );
-            }),
+      child:Column(
+        children: [
+          ClipRRect(
+            borderRadius: BorderRadius.circular(20),
+            child: Container(
+              child: TabBar(tabs: [
+                Tab()
+              ]),
             ),
-              
+          ),
           SizedBox(height: 6),
-          Data(),
+           Data(),
           
-          ],
-        ),
+        ],
       ),
+        
+      
+      
     );
   }
 }

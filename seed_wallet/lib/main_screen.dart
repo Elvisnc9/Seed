@@ -25,7 +25,7 @@ class MainScreen extends StatelessWidget {
               flex: 1,
               child: Container(color: bgColor, child: MenuList()),
             ),
-          VerticalDivider(),
+          
             Expanded(
               flex: 6,
               child: Padding(
