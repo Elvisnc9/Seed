@@ -1,15 +1,15 @@
 # seed_wallet
 
-A new Flutter project.
+A Fictional web3 wallet with tons of custom interactions and animations built with flutter web .
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+![User Interface](./assets/Images/Seed%20Deisgn.jpg)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+
+
+
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
